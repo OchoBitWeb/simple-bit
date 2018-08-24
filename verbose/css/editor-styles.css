@@ -4,7 +4,7 @@
  */
  body.gutenberg-editor-page .editor-writing-flow {
 	color: #333;
-	font-family: 'Crimson Text', serif;
+	font-family: 'Open Sans', serif;
 	font-size: 20px;
 	font-size: calc(20 / 16)rem;
 	line-height: 1.4;
@@ -30,7 +30,7 @@ body.gutenberg-editor-page .editor-post-title .editor-post-title__input {
 }
 
 body.gutenberg-editor-page .edit-post-visual-editor p {
-	font-family: 'Crimson Text', serif;
+	font-family: 'Open Sans', serif;
 	font-size: 20px;
 	font-size: calc(20 / 16)rem;
 

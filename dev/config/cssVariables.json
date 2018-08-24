@@ -1,7 +1,7 @@
 {
 	"variables": {
 		"global-font-color": "#333",
-		"global-font-family": "'Crimson Text', serif",
+		"global-font-family": "'Open Sans', serif",
 		"global-font-size": "20",
 		"global-font-line-height": "1.4",
 		"highlight-font-family": "'Roboto Condensed', sans-serif",
@@ -10,7 +10,8 @@
 		"small-font-size": "16",
 		"regular-font-size": "20",
 		"large-font-size": "36",
-		"larger-font-size": "48"
+    "larger-font-size": "48",
+    "theme-background-color": "#cccccc"
 	},
 	"queries": {
 		"narrow-menu-query": "screen and (max-width: 37.5em)",

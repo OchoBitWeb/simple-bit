@@ -227,9 +227,9 @@ function wprig_fonts_url() {
 	 */
 	$roboto = esc_html_x( 'on', 'Roboto Condensed font: on or off', 'wprig' );
 	/**
-	 * Translator: If Crimson Text does not support characters in your language, translate this to 'off'.
+	 * Translator: If Open Sans does not support characters in your language, translate this to 'off'.
 	 */
-	$crimson_text = esc_html_x( 'on', 'Crimson Text font: on or off', 'wprig' );
+	$open_sans = esc_html_x( 'on', 'Open Sans font: on or off', 'wprig' );
 
 	$font_families = array();
 
@@ -237,11 +237,11 @@ function wprig_fonts_url() {
 		$font_families[] = 'Roboto Condensed:400,400i,700,700i';
 	}
 
-	if ( 'off' !== $crimson_text ) {
-		$font_families[] = 'Crimson Text:400,400i,600,600i';
+	if ( 'off' !== $open_sans ) {
+		$font_families[] = 'Open Sans:400,400i,600,600i';
 	}
 
-	if ( in_array( 'on', array( $roboto, $crimson_text ) ) ) {
+	if ( in_array( 'on', array( $roboto, $open_sans ) ) ) {
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),
 			'subset' => urlencode( 'latin,latin-ext' ),
@@ -314,6 +314,7 @@ function wprig_styles() {
 
 	// Enqueue main stylesheet.
 	wp_enqueue_style( 'wprig-base-style', get_stylesheet_uri(), array(), '20180514' );
+	wp_enqueue_style( 'wprig-sass-main-styles', get_theme_file_uri( '/css/main.css' ), array(), '20180514' );
 
 	// Register component styles that are printed as needed.
 	wp_register_style( 'wprig-comments', get_theme_file_uri( '/css/comments.css' ), array(), '20180514' );
