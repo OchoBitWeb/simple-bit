@@ -45,6 +45,7 @@ function wprig_setup() {
 	register_nav_menus(
 		array(
 			'primary' => esc_html__( 'Primary', 'wprig' ),
+			'footer'  => esc_html__( 'Footer', 'wprig' ),
 		)
 	);
 
@@ -351,6 +352,8 @@ function wprig_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_enqueue_script( 'custom-js', get_theme_file_uri( '/js/custom.js' ), array(), '20180514', false );
 
 }
 add_action( 'wp_enqueue_scripts', 'wprig_scripts' );

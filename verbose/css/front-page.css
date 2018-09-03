@@ -51,5 +51,7 @@
 		border-top: 1px solid #111;
 		border-bottom: none;
 	}
-
+	.content-image {
+		margin: 0 -2rem;
+	}
 }
